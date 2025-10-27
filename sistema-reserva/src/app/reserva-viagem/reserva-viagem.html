@@ -51,7 +51,7 @@
           O número de passageiros é obrigatório.
         </div>
         <div *ngIf="f['numPassageiros'].errors?.['min'] || f['numPassageiros'].errors?.['max']">
-          O número de passageiros deve ser pelo menos 1.
+          O número de passageiros deve ser entre 1 e 5.
         </div>
       </div>
     </div>

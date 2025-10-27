@@ -65,7 +65,8 @@ export class ReservaViagem implements OnInit, OnDestroy {
       dataVolta: ['', Validators.required],
       numPassageiros: ['', [
         Validators.required,
-        Validators.min(1)
+        Validators.min(1),
+        Validators.max(5)
       ]],
       emailContato: ['', [
         Validators.required,
